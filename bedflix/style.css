@@ -1,18 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Overlock&family=Poppins:wght@500&family=Roboto:wght@300&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Overlock&family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
-
-
-body{
-    font-family: 'Inter', sans-serif;
+body {
+  font-family: "Inter", sans-serif;
+}
+.bg-desktop-accueil {
+  background: url(./assets/img/background/wp.jumanji.png) center/cover fixed;
+}
+.jumanji {
+  font-family: Gluten, Courier, monospace;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
 }
 
-.jumanji{
-    letter-spacing: 0.6rem;
-    text-transform: uppercase;
+.container-jumanji {
+  width: 25rem;
 }
 
-.container-jumanji{
-    width: 25rem;
+.form-control {
+  background: black;
+  height: 80%;
+}
+.form-control::placeholder {
+  color: white;
+}
+.form-control {
+  background: black;
+  height: 80%;
+}
+.form-control::placeholder {
+  color: white;
+}
+
+.dropdown-toggle {
+  background: black;
+}
+
+.films-title {
+  text-shadow: 1px 1px 4px #343a40;
+}
+form {
+  align-items: center;
+}
+.link-series {
+  color: black !important;
+}
+
+@media (width < 750px) {
+  .bg-desktop-accueil {
+    background: none;
+  }
+  .desktop {
+    display: none;
+  }
+  body {
+    background: black;
+  }
+}
+@media (width > 750px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.recherche-icone {
+  transform: translateY(-50%);
+}
+.serie {
+  color: red;
+}
+.bg-mobile {
+  background: url(./assets/img/background/wp-mobile.png) center/cover;
+  height: 50vh;
+}
+.cheat-cards-1 img{
+    transform: translateX(50%);
 }

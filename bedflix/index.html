@@ -14,60 +14,56 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body
-    class="bg-image"
-    style="
-      background: url(./assets/img/background/wp.jumanji.png) center/cover fixed;
-    "
-  >
+  <body class="bg-image bg-desktop-accueil">
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Gluten:wght@300&family=Overlock&family=Poppins:wght@500&family=Roboto:wght@300&display=swap");
     </style>
+    <div class="desktop">
+      <nav class="navbar bg-black">
+        <div class="container">
+          <div>
+            <a href="./index.html">
+              <img
+                src="./assets/img/icones/bedflix-logo.png"
+                alt="logo"
+                class="navbar-brand"
+                width="155"
+                height="60"
+            /></a>
+            <a class="navbar-brand text-danger" href="#">Accueil</a>
+            <a
+              class="navbar-brand text-light link-opacity-50-hover"
+              href="./series.html"
+              >Séries</a
+            >
+            <a
+              class="navbar-brand text-light link-opacity-50-hover"
+              href="./films.html"
+              >Films</a
+            >
+          </div>
+          <div>
+            <form class="d-flex bg-black" role="search">
+              <input
+                class="form-control rounded-0"
+                type="search"
+                placeholder="Titre, genres, ..."
+                aria-label="Search"
+              />
+              <a href="http://" title="Aucune notification."
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="100%"
+                  fill="currentColor"
+                  class="bi bi-bell-fill text-light ms-5"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"
+                  /></svg
+              ></a>
 
-    <nav class="navbar bg-black">
-      <div class="container">
-        <div>
-          <img
-            src="./assets/img/icones/bedflix-logo.png"
-            alt="logo"
-            class="navbar-brand"
-            width="155"
-            height="60"
-          />
-          <a class="navbar-brand text-danger" href="#">Accueil</a>
-          <a
-            class="navbar-brand text-light link-opacity-50-hover"
-            href="./series.html"
-            >Séries</a
-          >
-          <a
-            class="navbar-brand text-light link-opacity-50-hover"
-            href="./films.html"
-            >Films</a
-          >
-        </div>
-        <div>
-          <form class="d-flex bg-black" role="search">
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Titre, genres, ..."
-              aria-label="Search"
-            />
-            <a href="http://"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="100%"
-                fill="currentColor"
-                class="bi bi-bell-fill text-light ms-5"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"
-                /></svg
-            ></a>
-            
               <a href="http://">
                 <img
                   src="./assets/img/icones/avatar.png"
@@ -76,62 +72,122 @@
                   class="ms-5 rounded-3 bg-dark"
                 />
               </a>
-          </form>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container text-light fs-1 fw-bold mt-5">
+        <img src="./assets/img/icones/b logo.svg" alt="logo" />
+        Séries
+      </div>
+      <div class="container text-light fs-1 fw-bold my-5 ps-5">
+        <h1 class="jumanji">Jumanji</h1>
+      </div>
+
+      <div class="container text-light">
+        <h2 class="fw-bold">Regardez la première saison !</h2>
+        <p class="container-jumanji fs-5">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
+          in rerum placeat quidem amet saepe officia asperiores rem quos
+          provident.
+        </p>
+      </div>
+
+      <div class="container fixed-bottom mb-5 text-light fs-1 ms-5">
+        Films du moment
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner d-flex">
+            <div class="carousel-item active">
+              <img src="./assets/img/films/card-25.png" class="d-block w-20%" />
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/films/card-26.png" class="d-block w-20%" />
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/films/card-27.png" class="d-block w-20%" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-    </nav>
-    <div class="container text-light fs-1 fw-bold mt-5">
-      <img src="./assets/img/icones/b logo.svg" alt="logo" />
-      Séries
-    </div>
-    <div
-      class="container text-light fs-1 fw-bold m-5"
-      style="font-family: Gluten, Courier, monospace"
-    >
-      <h1 class="jumanji">Jumanji</h1>
     </div>
 
-    <div class="container text-light">
-      <h2 class="fw-bold">Regardez la première saison !</h2>
-      <p class="container-jumanji fs-5">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
-        in rerum placeat quidem amet saepe officia asperiores rem quos
-        provident.
-      </p>
-    </div>
-
-    <div class="container fixed-bottom mb-5 text-light fs-1 ms-5">
-      Films du moment
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/films/card-25.png" class="d-block w-20%" />
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/films/card-26.png" class="d-block w-20%" />
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/films/card-27.png" class="d-block w-20%" />
-          </div>
+    <div class="mobile">
+      <div class="bg-mobile">
+        <div class="logo-b d-flex p-5">
+          <img src="./assets/img/icones/b logo.svg" alt="b logo" />
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      </div>
+      <div class="mobile-center bg-black d-flex justify-content-center">
+        <button type="button" class="btn btn-light m-5">Lecture</button>
+      </div>
+
+        <div class="cheat-cards bg-black">
+          <div class="cheat-cards-2">
+            <img
+              src="./assets/img/cheat-cards/series du moment.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="cheat-cards-1">
+            <img src="./assets/img/cheat-cards/exclusivités.png" alt="" />
+          </div>
+          <div class="cheat-cards-3">
+            <img src="./assets/img/cheat-cards/series à voir.png" alt="" />
+          </div>
+      </div>
+      <div
+        class="d-flex fixed-bottom justify-content-around bg-light p-3"
+        height="50px"
+      >
+        <a href="./index.html"
+          ><img
+            src="./assets/img/icones/mobile/accueil.svg"
+            height="100px"
+            alt="accueil"
+        /></a>
+        <a href="./index.html"
+          ><img
+            src="./assets/img/icones/mobile/séries-red.svg"
+            height="100px"
+            alt="séries"
+            class="serie"
+        /></a>
+        <a href="./index.html"
+          ><img
+            src="./assets/img/icones/mobile/recherche.svg"
+            height="100px"
+            alt="recherche"
+            class="recherche-icone"
+          />
+        </a>
+        <a href="./index.html"
+          ><img
+            src="./assets/img/icones/mobile/films.svg"
+            height="100px"
+            alt="films"
+        /></a>
+        <a href="./index.html"
+          ><img src="./assets/img/icones/avatar.png" height="60px" alt=""
+        /></a>
       </div>
     </div>
     <script

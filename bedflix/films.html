@@ -27,13 +27,14 @@
     <nav class="navbar bg-black">
       <div class="container">
         <div>
-          <img
-            src="./assets/img/icones/bedflix-logo.png"
-            alt="logo"
-            class="navbar-brand"
-            width="155"
-            height="60"
-          />
+            <a href="./index.html">
+                <img
+                  src="./assets/img/icones/bedflix-logo.png"
+                  alt="logo"
+                  class="navbar-brand"
+                  width="155"
+                  height="60"
+                /></a>
           <a class="navbar-brand text-danger" href="./index.html">Accueil</a>
           <a
             class="navbar-brand text-light link-opacity-50-hover"
@@ -45,14 +46,14 @@
           >
         </div>
         <div>
-          <form class="d-flex bg-black" role="search">
+          <form class="d-flex bg-black " role="search">
             <input
-              class="form-control"
+              class="form-control rounded-0"
               type="search"
               placeholder="Titre, genres, ..."
               aria-label="Search"
             />
-            <a href="http://"
+            <a href="http://" title="Aucune notification."
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
@@ -70,7 +71,7 @@
                 src="./assets/img/icones/avatar.png"
                 alt="avatar"
                 height="50px"
-                class="border border-primary-subtle ms-5 rounded-3"
+                class="ms-5 rounded-3 bg-dark"
               />
             </a>
           </form>
@@ -79,10 +80,9 @@
     </nav>
 
     <div class="container d-flex text-light fs-1 fw-bold mt-5">
-        <img src="./assets/b logo.svg" alt="" srcset="">
-        Films
+       <h1 class="films-title"> Films</h1>
         <div class="dropdown ms-5">
-            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-dark dropdown-toggle rounded-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Genres
               </button>
               <ul class="dropdown-menu">
@@ -93,16 +93,16 @@
           </div>
         </div>
 
-    <div class="container text-light fs-1 fw-bold mt-5">
+    <div class="container text-light fs-1 fw-bold mt-5 d-flex align-content-center ">
       <img src="./assets/img/icones/b logo.svg" alt="logo"/>
-      FILM
+      <div class="films-title ms-5">FILM</div>
     </div>
     
 
 
 
     <div class="container fixed-bottom mb-5 text-light fs-1 ms-5">
-      Films du moment
+        <div class="films-title">Films du moment </div>
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
