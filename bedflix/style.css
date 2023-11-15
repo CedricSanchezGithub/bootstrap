@@ -6,7 +6,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 .bg-desktop-accueil {
-  background: url(./assets/img/background/wp.jumanji.png) center/cover fixed;
+  background: url(./assets/img/background/wp.jumanji.hd.jpg) center/cover fixed;
 }
 .jumanji {
   font-family: Gluten, Courier, monospace;
@@ -43,6 +43,13 @@ body {
 form {
   align-items: center;
 }
+.form-control{
+  background: url(./assets/img/icones/magnifying-glass-solid.svg) no-repeat;
+  padding-left:25px;
+}
+.form-series::placeholder{
+  color: black;
+}
 .link-series {
   color: black !important;
 }
@@ -55,13 +62,18 @@ form {
     display: none;
   }
   body {
-    background: black;
+    overflow: hidden;
   }
+}
+@media (width < 600px) {
 }
 @media (width > 750px) {
   .mobile {
     display: none;
   }
+}
+p{
+  backdrop-filter: blur(10px);
 }
 
 .recherche-icone {
